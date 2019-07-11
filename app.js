@@ -253,17 +253,6 @@ function addTracksToPlaylist(tracks, artist){
   });
 }
 
-function addTrackToPlaylist(trackId, artist){
-  // Add tracks to a playlist
-  spotifyApi.addTracksToPlaylist(playlistId, ["spotify:track:" + trackId])
-  .then(function(data) {
-    if(artist)
-      addSongsOfArtist(artist);
-  }, function(err) {
-    console.log('addTrackToPlaylist: Something went wrong!', err);
-  });
-}
-
 app.get('/refresh_token', function(req, res) {
   // requesting access token from refresh token
   var refresh_token = req.query.refresh_token;
