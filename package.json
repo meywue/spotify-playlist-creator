@@ -4,11 +4,11 @@
   "description": "Creates a playlist based on the given artists.",
   "version": "0.1.0",
   "dependencies": {
-    "cookie-parser": "1.3.2",
-    "cors": "^2.8.4",
-    "express": "~4.16.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "~4.17.1",
     "querystring": "~0.2.0",
-    "request": "~2.83.0",
+    "request": "~2.88.0",
     "spotify-web-api-node": "^4.0.0"
   }
 }
